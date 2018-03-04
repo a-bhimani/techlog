@@ -1,0 +1,69 @@
+authors
+    #author_id
+	author_uuid
+	username
+	secret
+	passphrase
+	author_alias
+	active_state #1, 0, 1
+	remarks
+	cdate
+	mdate
+	is_deleted
+
+articles
+	#article_id
+	article_uuid
+	ref_author
+	author_date
+	description
+	meta_keys
+	publish_after
+    active_state
+	cdate
+	mdate
+	is_deleted
+
+contents
+	#content_id
+	ref_article
+	content_type #para, code, object, attachment
+	ref_content
+	sort_order
+	cdate
+	mdate
+	is_deleted
+
+content_para
+	#content_para_id
+	para #wysiwyg
+
+content_code
+	#content_code_id
+	language #lets see
+	snippet
+
+content_object
+	#content_object_id
+	object_type #url, html_url, image_url, image, youtube_url, video
+	stored_reference
+	caption
+    
+content_attachment
+    #content_attachment_id
+    attachment_mime
+    stored_reference
+    title
+
+comments
+	#comment_id
+	ref_article_id
+	name
+	comment #strip html
+	is_approved
+	cdate
+	mdate
+	is_deleted
+
+
+
