@@ -110,3 +110,7 @@ applications/techlog/compiled
 applications/techlog/errors
 applications/techlog/sessions
 applications/techlog/uploads
+
+applications/techlog/private/appconfig.ini
+applications/techlog/private/mongodb-openshift.txt
+applications/techlog/private/postgre-openshift.txt
